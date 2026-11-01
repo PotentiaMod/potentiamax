@@ -13,7 +13,7 @@ const ttsLocales = require('./tts-locales');
 const VERSION = 1;
 // CACHE_DIRECTORY can be set by systemd
 const dbFolder = process.env.CACHE_DIRECTORY || path.join(__dirname, '..');
-const db = new sqlite3(path.join(dbFolder, `trampoline-${VERSION}.db`));
+const db = new sqlite3(path.join(dbFolder, `potentiamax-${VERSION}.db`));
 db.pragma('journal_mode = WAL');
 db.pragma('secure_delete = true');
 db.exec(`
