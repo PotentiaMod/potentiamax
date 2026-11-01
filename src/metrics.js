@@ -15,39 +15,39 @@ const httpDuration = new client.Histogram({
 });
 
 const queueBacklog = new client.Gauge({
-  name: 'trampoline_queue_backlog',
+  name: 'potentiamax_queue_backlog',
   help: 'Requests waiting in queue',
   labelNames: ['queue']
 });
 
 const queueWait = new client.Histogram({
-  name: 'trampoline_queue_wait_seconds',
+  name: 'potentiamax_queue_wait_seconds',
   help: 'Time spent waiting in queue',
   labelNames: ['queue'],
   buckets: [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 20, 40, 60]
 });
 
 const queueRejected = new client.Counter({
-  name: 'trampoline_queue_rejected_total',
+  name: 'potentiamax_queue_rejected_total',
   help: 'Requests rejected because queue was full',
   labelNames: ['queue']
 });
 
 const upstreamDuration = new client.Histogram({
-  name: 'trampoline_upstream_request_duration_seconds',
+  name: 'potentiamax_upstream_request_duration_seconds',
   help: 'Upstream request duration',
   labelNames: ['queue', 'status'],
   buckets: [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30]
 });
 
 const cacheLookups = new client.Counter({
-  name: 'trampoline_cache_lookups_total',
+  name: 'potentiamax_cache_lookups_total',
   help: 'Cache lookups',
   labelNames: ['type', 'result']
 });
 
 const rateLimited = new client.Counter({
-  name: 'trampoline_rate_limited_total',
+  name: 'potentiamax_rate_limited_total',
   help: 'Requests over a rate limit',
   labelNames: ['name']
 });
