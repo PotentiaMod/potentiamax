@@ -1,13 +1,13 @@
 {
-  "name": "trampoline",
+  "name": "potentiamax",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test node --test 'test/**/*.test.js'"
   },
-  "author": "Thomas Weber",
-  "license": "MIT",
+  "author": "Crystal Franks",
+  "license": "GPL-3.0",
   "dependencies": {
     "@prometheus-io/client": "^0.16.1",
     "better-sqlite3": "^13.0.3",
