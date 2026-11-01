@@ -133,7 +133,7 @@ class RequestQueue {
     return {
       keepalive: true,
       headers: {
-        'User-Agent': 'https://github.com/TurboWarp/trampoline'
+        'User-Agent': 'https://github.com/PotentiaMod/potentiamax'
       },
     };
   }
