@@ -15,7 +15,7 @@ const requests = db.prepare(`SELECT id, status, data FROM cache WHERE id LIKE 'p
         const result = await fetch(`https://projects.scratch.mit.edu/${project}?token=${token}`, {
             signal: controller.signal,
             headers: {
-                'user-agent': 'github.com/TurboWarp/trampoline tools/token-health.js'
+                'user-agent': 'github.com/PotentiaMod/potentiamax tools/token-health.js'
             }
         });
         controller.abort();
